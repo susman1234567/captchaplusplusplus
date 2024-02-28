@@ -8,6 +8,11 @@
 #include <iostream>
 using namespace std;
 int main(){
+  char captcha {};
+  cout << "captcha 1 or 2" << endl;
+  cin >> captcha;
+  if (captcha == 1)
+  {
      char answer {};
   cout << "𝙘𝙖𝙥𝙩𝙘𝙝𝙖+++" << endl;
     cout << "ꍏꋪꍟ ꌩꂦꀎ ꃅꀎꂵꍏꈤ y/n" << endl;
@@ -33,4 +38,45 @@ int main(){
   
     
       }
+  }
+  else
+  {
+     char answer {};
+      char favcolor {};
+      int passthrough {};
+    cout << "𝙘𝙖𝙥𝙩𝙘𝙝𝙖+++" << endl;
+    cout << "guess the number" << endl;
+    cout << "1-10" << endl;
+    cout << "i dare you" << endl;
+    cin >> answer;
+    if (answer == '1')
+    {
+      cout << "you got it" << endl;
+      cout << "ok buut that was just fun haha" << endl;
+    }
+    else
+    {
+      cout << "wrong" << endl;
+      cout << "ok buut that was just fun haha" << endl;
+    }
+    cout << "ok select your favorite colour " << endl;
+    cout << "red green blue yellow" << endl;
+      cin >> favcolor;
+    if (favcolor == 'g')
+    {
+      cout << "that is not a creative color" << endl;
+      passthrough = 0;
+    }
+    else
+    {
+      cout << "that is a creative color" << endl;
+      passthrough = 1;
+    }
+    if (passthrough == 1)
+    {
+      cout << "ok you passed" << endl;
+    }
+
+
+  }
 }
